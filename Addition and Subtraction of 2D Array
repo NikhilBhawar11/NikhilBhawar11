@@ -1,0 +1,95 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input for the first array
+        System.out.println("Enter the number of Rows in the first array:");
+        int row1 = sc.nextInt();
+        System.out.println("Enter the number of Columns in the first array:");
+        int col1 = sc.nextInt();
+        int arr1[][] = new int[row1][col1];
+
+        for (int i = 0; i < row1; i++) {
+            System.out.println("Enter " + col1 + " elements for row " + (i + 1) + ":");
+            for (int j = 0; j < col1; j++) {
+                arr1[i][j] = sc.nextInt();
+            }
+        }
+
+        System.out.println("First array is:");
+        for (int i = 0; i < row1; i++) {
+            for (int j = 0; j < col1; j++) {
+                System.out.print(arr1[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        // Input for the second array
+        int row2 = row1;
+        int col2 = col1;
+        int arr2[][] = new int[row2][col2];
+
+        for (int i = 0; i < row2; i++) {
+            System.out.println("Enter " + col2 + " elements for row " + (i + 1) + " of the second array:");
+            for (int j = 0; j < col2; j++) {
+                arr2[i][j] = sc.nextInt();
+            }
+        }
+
+        System.out.println("Second array is:");
+        for (int i = 0; i < row2; i++) {
+            for (int j = 0; j < col2; j++) {
+                System.out.print(arr2[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        // User's choice for operation
+        System.out.println("Enter your choice:\n1: Addition\n2: Subtraction");
+        int choice = sc.nextInt();
+
+        switch (choice) {
+            case 1:
+                // Addition
+                int arrAdd[][] = new int[row1][col1];
+                for (int i = 0; i < row1; i++) {
+                    for (int j = 0; j < col1; j++) {
+                        arrAdd[i][j] = arr1[i][j] + arr2[i][j];
+                    }
+                }
+                System.out.println("Result of Addition:");
+                for (int i = 0; i < row1; i++) {
+                    for (int j = 0; j < col1; j++) {
+                        System.out.print(arrAdd[i][j] + " ");
+                    }
+                    System.out.println();
+                }
+                break;
+
+            case 2:
+                // Subtraction
+                int arrSub[][] = new int[row1][col1];
+                for (int i = 0; i < row1; i++) {
+                    for (int j = 0; j < col1; j++) {
+                        arrSub[i][j] = arr1[i][j] - arr2[i][j];
+                    }
+                }
+                System.out.println("Result of Subtraction:");
+                for (int i = 0; i < row1; i++) {
+                    for (int j = 0; j < col1; j++) {
+                        System.out.print(arrSub[i][j] + " ");
+                    }
+                    System.out.println();
+                }
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+                break;
+        }
+        
+        sc.close(); // Close the scanner
+    }
+}
