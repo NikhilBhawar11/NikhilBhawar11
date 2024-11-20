@@ -1,0 +1,72 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class BinarySearch {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        // Taking input for the size of the array
+        System.out.println("Enter the size of the array:");
+        int size = sc.nextInt();
+        
+        // Declaring the array
+        int arr[] = new int[size];
+        
+        // Taking input for array elements
+        System.out.println("Enter " + size + " elements:");
+        for (int i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        // Sorting the array in ascending order for binary search
+        Arrays.sort(arr);
+
+        // Displaying the sorted array
+        System.out.println("Entered array is: ");
+        for (int i = 0; i < size; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+
+        // Taking input for the number to be searched
+        System.out.println("Enter number to be searched: ");
+        int find = sc.nextInt();
+
+        // Binary Search Logic
+        int result = binarySearch(arr, find);
+
+        // Display result of binary search
+        if (result == -1) {
+            System.out.println("Number not found.");
+        } else {
+            System.out.println("Number found at position " + (result + 1));
+        }
+    }
+
+    // Binary Search function
+    public static int binarySearch(int[] arr, int target) {
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2; // Calculate mid point to avoid overflow
+
+            // Check if target is present at mid
+            if (arr[mid] == target) {
+                return mid; // Return the index if found
+            }
+
+            // If target is greater, ignore the left half
+            if (arr[mid] < target) {
+                left = mid + 1;
+            }
+            // If target is smaller, ignore the right half
+            else {
+                right = mid - 1;
+            }
+        }
+
+        // Target is not present in the array
+        return -1;
+    }
+}
