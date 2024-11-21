@@ -1,0 +1,24 @@
+public class UnaryOperator{
+    public static void main(String[] args) {
+        int number = 10;
+
+        // Display initial value of the variable
+        System.out.println("Initial value of number: " + number);
+
+        // Pre-increment: Increment first, then use the value
+        System.out.println("Pre-increment (before printing): " + (++number));
+        System.out.println("Value of number after pre-increment: " + number);
+
+        // Post-increment: Use the value, then increment
+        System.out.println("Post-increment (before printing): " + (number++));
+        System.out.println("Value of number after post-increment: " + number);
+
+        // Pre-decrement: Decrement first, then use the value
+        System.out.println("Pre-decrement (before printing): " + (--number));
+        System.out.println("Value of number after pre-decrement: " + number);
+
+        // Post-decrement: Use the value, then decrement
+        System.out.println("Post-decrement (before printing): " + (number--));
+        System.out.println("Value of number after post-decrement: " + number);
+    }
+}
