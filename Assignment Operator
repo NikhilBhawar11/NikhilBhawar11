@@ -1,0 +1,27 @@
+public class AssignmentOperatorsDemo {
+    public static void main(String[] args) {
+        // Initialize a variable
+        int num = 10;
+        System.out.println("Initial value of num: " + num);
+
+        // Use += operator
+        num += 5; // Equivalent to num = num + 5
+        System.out.println("After += 5, num: " + num);
+
+        // Use -= operator
+        num -= 3; // Equivalent to num = num - 3
+        System.out.println("After -= 3, num: " + num);
+
+        // Use *= operator
+        num *= 2; // Equivalent to num = num * 2
+        System.out.println("After *= 2, num: " + num);
+
+        // Use /= operator
+        num /= 4; // Equivalent to num = num / 4
+        System.out.println("After /= 4, num: " + num);
+
+        // Use %= operator
+        num %= 3; // Equivalent to num = num % 3
+        System.out.println("After %= 3, num: " + num);
+    }
+}
