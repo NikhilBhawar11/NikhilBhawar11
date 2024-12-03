@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Assignment_4
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter number of customer : ");
+        int totcust = scanner.nextInt();
+        System.out.println("Processing customers in the queue:");
+        for (int i = 1; i <= totcust; i++) 
+        {
+            System.out.print("Enter customer ID for " + i + " : ");
+            int cID = scanner.nextInt();
+            if (cID % 5 == 0 && cID % 10 != 0) {
+                System.out.println("Customer ID " + cID + " is skipped.");
+                continue;
+            }
+            if (cID % 10 == 0)
+             {
+                System.out.println("Customer ID " + cID + " has  Stopped further processing.");
+                break;
+            }
+            System.out.println("Processing customer with ID: " + cID);
+        }
+    }    
+}
