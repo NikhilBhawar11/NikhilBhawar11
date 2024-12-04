@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @NikhilBhawar11
+- 👋 Hi, I’m NikhilBhawar
 - 👀 I’m interested in coding
 - 🌱 I’m currently learning b-tech in AIML
 - 💞️ I’m looking to collaborate on DSA
