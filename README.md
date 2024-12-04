@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @NikhilBhawar11
-- 👀 I’m interested in ...coding
-- 🌱 I’m currently learning ...b-tech in AIML
-- 💞️ I’m looking to collaborate on ...DSA
-- 📫 How to reach me ...
+- 👀 I’m interested in coding
+- 🌱 I’m currently learning b-tech in AIML
+- 💞️ I’m looking to collaborate on DSA
+- 📫 How to reach me bhawarnikhil4@gmail.com
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 
