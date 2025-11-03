@@ -1,7 +1,7 @@
 - 👋 Hi, I’m NikhilBhawar
-- 👀 I’m interested in coding
+- 👀 I’m interested in Robotics
 - 🌱 I’m currently learning b-tech in AIML
-- 💞️ I’m looking to collaborate on DSA
+- 💞️ I’m looking to collaborate on AI in robotics
 - 📫 How to reach me bhawarnikhil4@gmail.com
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
